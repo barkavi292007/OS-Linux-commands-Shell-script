@@ -48,18 +48,22 @@ cat < file1
 
 cat < file2
 ## OUTPUT
+<img width="442" height="165" alt="image" src="https://github.com/user-attachments/assets/a13c8b06-df1b-42e9-aa4f-40e043cc43d8" />
 
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+ <img width="494" height="329" alt="image" src="https://github.com/user-attachments/assets/ffef0999-808c-4a98-b025-0e044d33346e" />
+
 comm file1 file2
  ## OUTPUT
+<img width="480" height="284" alt="image" src="https://github.com/user-attachments/assets/1be04a3d-c4f9-4ec9-98e3-8eb372920139" />
 
  
 diff file1 file2
 ## OUTPUT
+<img width="453" height="228" alt="image" src="https://github.com/user-attachments/assets/3b078cc4-8290-4302-8e12-62c70a362557" />
 
 
 #Filters
@@ -84,16 +88,19 @@ cat > file22
 cut -c1-3 file11
 ## OUTPUT
 
+<img width="565" height="89" alt="image" src="https://github.com/user-attachments/assets/aa86af6a-3cf3-456c-8eb9-a06fc756df3e" />
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
+<img width="404" height="118" alt="image" src="https://github.com/user-attachments/assets/27991c89-b076-4104-a3d3-8fa3955cea82" />
 
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
+<img width="444" height="118" alt="image" src="https://github.com/user-attachments/assets/c1c7fd92-4a74-4632-b338-fd608aef0d22" />
 
 
 cat < newfile 
@@ -110,15 +117,16 @@ grep Hello newfile
 ## OUTPUT
 
 
+<img width="441" height="72" alt="image" src="https://github.com/user-attachments/assets/3fc28c31-5795-49fb-bb54-0069295f860a" />
 
 grep hello newfile 
 ## OUTPUT
 
-
-
+<img width="441" height="72" alt="image" src="https://github.com/user-attachments/assets/3fc28c31-5795-49fb-bb54-0069295f860a" />
 
 grep -v hello newfile 
 ## OUTPUT
+<img width="574" height="138" alt="image" src="https://github.com/user-attachments/assets/49f2b88e-c2ed-46d3-b462-b6f96b2660dd" />
 
 
 
@@ -131,26 +139,24 @@ cat newfile | grep -i "hello"
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
+<img width="568" height="85" alt="image" src="https://github.com/user-attachments/assets/e3c8fb82-2e36-4ec8-b9a9-f9f970b9b453" />
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
 
+<img width="894" height="463" alt="image" src="https://github.com/user-attachments/assets/9fcbd984-b55a-4f79-9e42-eb3abe803521" />
 
 
 grep -w -n world newfile   
 ## OUTPUT
+<img width="429" height="54" alt="image" src="https://github.com/user-attachments/assets/9edd9d41-464e-4aab-87cb-905a50505567" />
 
 
 cat < newfile 
 ```
-Hello world
-hello world
-Linux is world number 1
-Unix is predecessor
-Linux is best in this World
-^d
+cat < newfile 
 ```
 
 cat > newfile
@@ -163,46 +169,54 @@ Linux is best in this World
 ^d
  ```
 egrep -w 'Hello|hello' newfile 
-## OUTPUT
+## OUTPUTp 
 
+<img width="500" height="81" alt="image" src="https://github.com/user-attachments/assets/ad43ec89-9a2c-4275-8fa3-94daa2327227" />
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
 
+<img width="500" height="81" alt="image" src="https://github.com/user-attachments/assets/eb94992c-931f-4e17-b6b1-dd7b04e857ae" />
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
 
+<img width="500" height="81" alt="image" src="https://github.com/user-attachments/assets/1bfeab90-fe15-43c3-9df3-21cc60cd1446" />
 
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
 
+<img width="506" height="57" alt="image" src="https://github.com/user-attachments/assets/ba2df5dc-5177-4844-98f4-547600080c1e" />
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
 
+<img width="450" height="72" alt="image" src="https://github.com/user-attachments/assets/3666729c-a1fe-490c-816d-179bea61a3d6" />
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
+<img width="454" height="50" alt="image" src="https://github.com/user-attachments/assets/280a1512-581f-4c1f-aa15-00a794d9c07d" />
 
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
+<img width="466" height="92" alt="image" src="https://github.com/user-attachments/assets/4f272758-92e6-4cdc-96be-e33c34cf342b" />
 
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
+<img width="466" height="52" alt="image" src="https://github.com/user-attachments/assets/1316e8f8-8f95-423d-bcd8-d31d58231484" />
 
 
 
-egrep 'Linux.*world' newfile 
+
 ## OUTPUT
 
 
