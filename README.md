@@ -338,7 +338,7 @@ sed -n '2,4{s/$/*/;p}' file23
 
 
 #Sorting File content
-c
+cat > file22
 ```
 1001 | Ram | 10000 | HR
 1002 | tom |  5000 | Admin
@@ -348,6 +348,8 @@ c
 ``` 
 sort file21
 ## OUTPUT
+
+<img width="530" height="163" alt="image" src="https://github.com/user-attachments/assets/6b4a3757-c5c1-4af1-98cf-0f42856916fc" />
 
 
 cat > file22
@@ -362,12 +364,14 @@ cat > file22
 uniq file22
 ## OUTPUT
 
+<img width="338" height="151" alt="image" src="https://github.com/user-attachments/assets/bc86600d-1536-45c7-b1d1-a12ac832cb60" />
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
+<img width="539" height="86" alt="image" src="https://github.com/user-attachments/assets/b40ec047-feff-492f-a908-2e49beee4ae9" />
 
 cat < urllist.txt
 ```
@@ -378,23 +382,21 @@ www. mrcet.... com
  ```
 cat > urllist.txt
 ```
-www. yahoo. com
-www. google. com
-www. mrcet.... com
- ```
-cat urllist.txt | tr -d ' '
  ## OUTPUT
 
+<img width="381" height="117" alt="image" src="https://github.com/user-attachments/assets/49696d30-5651-4a14-8557-0b7e04c4b8dc" />
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
 
+<img width="530" height="187" alt="image" src="https://github.com/user-attachments/assets/d9e8be93-792d-46f8-9732-f7863771482b" />
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
+<img width="681" height="983" alt="image" src="https://github.com/user-attachments/assets/c6fc0745-4f54-47be-b139-c2fd495c0459" />
 
 
 mkdir backupdir
