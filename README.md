@@ -88,20 +88,18 @@ cat > file22
 cut -c1-3 file11
 ## OUTPUT
 
-<img width="565" height="89" alt="image" src="https://github.com/user-attachments/assets/aa86af6a-3cf3-456c-8eb9-a06fc756df3e" />
+<img width="370" height="128" alt="image" src="https://github.com/user-attachments/assets/63ed9569-179c-4f5a-9df7-68f3c6c81211" />
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
-<img width="404" height="118" alt="image" src="https://github.com/user-attachments/assets/27991c89-b076-4104-a3d3-8fa3955cea82" />
-
+<img width="370" height="128" alt="image" src="https://github.com/user-attachments/assets/ee1046b2-0967-4838-9afd-d849f6bb5c8b" />
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-<img width="444" height="118" alt="image" src="https://github.com/user-attachments/assets/c1c7fd92-4a74-4632-b338-fd608aef0d22" />
-
+<img width="370" height="128" alt="image" src="https://github.com/user-attachments/assets/88f76599-6d8c-490f-932e-736c52da93ed" />
 
 cat < newfile 
 ```
@@ -115,33 +113,22 @@ hello world
  
 grep Hello newfile 
 ## OUTPUT
-
-
-<img width="441" height="72" alt="image" src="https://github.com/user-attachments/assets/3fc28c31-5795-49fb-bb54-0069295f860a" />
-
-grep hello newfile 
-## OUTPUT
-
-<img width="441" height="72" alt="image" src="https://github.com/user-attachments/assets/3fc28c31-5795-49fb-bb54-0069295f860a" />
+<img width="349" height="73" alt="image" src="https://github.com/user-attachments/assets/8092ecec-b179-492b-85b5-eca0ceda1ef3" />
 
 grep -v hello newfile 
 ## OUTPUT
+
 <img width="574" height="138" alt="image" src="https://github.com/user-attachments/assets/49f2b88e-c2ed-46d3-b462-b6f96b2660dd" />
-
-
 
 cat newfile | grep -i "hello"
 ## OUTPUT
 
-
-
+<img width="438" height="70" alt="image" src="https://github.com/user-attachments/assets/09bd35d5-d1ef-4e54-973e-f03ca4dab19a" />
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
 <img width="568" height="85" alt="image" src="https://github.com/user-attachments/assets/e3c8fb82-2e36-4ec8-b9a9-f9f970b9b453" />
-
-
 
 grep -R ubuntu /etc
 ## OUTPUT
@@ -152,7 +139,6 @@ grep -R ubuntu /etc
 grep -w -n world newfile   
 ## OUTPUT
 <img width="429" height="54" alt="image" src="https://github.com/user-attachments/assets/9edd9d41-464e-4aab-87cb-905a50505567" />
-
 
 cat < newfile 
 ```
@@ -379,12 +365,16 @@ www. yahoo. com
 www. google. com
 www. mrcet.... com
 ^d
- ```
+```
 cat > urllist.txt
 ```
+www. yahoo. com
+www. google. com
+www. mrcet.... com
+```
+cat urllist.txt | tr-d''
  ## OUTPUT
 
-<img width="381" height="117" alt="image" src="https://github.com/user-attachments/assets/49696d30-5651-4a14-8557-0b7e04c4b8dc" />
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
